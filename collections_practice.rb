@@ -25,7 +25,7 @@ def first_wa(arr)
       if(item.include?("wa"))
         return item
       end
-    else 
+    else
       if(item.to_s.include?("wa"))
         return item
       end
