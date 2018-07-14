@@ -1,4 +1,4 @@
-def begings_with_r(arr)
+def begins_with_r(arr)
   result = true
   arr.each { |item|
     if !item.start_with? ("r")
