@@ -20,5 +20,5 @@ def contain_a(arr)
 end
 
 def first_wa(arr)
-  arr.select {|item| item.include?("wa")}
+  arr.select { |item| item.include?("wa")}
 end
