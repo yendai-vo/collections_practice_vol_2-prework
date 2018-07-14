@@ -26,3 +26,14 @@ def first_wa(arr)
     end
   }
 end
+
+def remove_non_strings(arr)
+  result = []
+
+  arr.each {|item|
+    if(item.is_a? String)
+      result.push(item)
+    end
+  }
+  result
+end
