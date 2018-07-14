@@ -21,14 +21,8 @@ end
 
 def first_wa(arr)
   arr.each { |item|
-    if(item.is_a? String)
-      if(item.include?("wa"))
-        return item
-      end
-    else
-      if(item.to_s.include?("wa"))
-        return item
-      end
+    if(item.to_s.include?("wa"))
+      return item
     end
   }
 end
