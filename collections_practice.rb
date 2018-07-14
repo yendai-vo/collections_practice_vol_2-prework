@@ -18,3 +18,7 @@ def contain_a(arr)
   }
   result
 end
+
+def first_wa(arr)
+  arr.find('wa')
+end
