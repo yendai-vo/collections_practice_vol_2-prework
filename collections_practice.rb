@@ -87,10 +87,10 @@ end
 
 def organize_schools(schools)
   result = []
-  schools.each { |schoolName, val| 
+  schools.each { |schoolName, val|
     found = false
     result.each{|key, value|
-      if key == val[:location] 
+      if key == val[:location]
         value.push(schoolName)
       end
     }
