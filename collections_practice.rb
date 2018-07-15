@@ -64,7 +64,7 @@ end
 def merge_data(keys, values)
   result = []
   keys.each { |key|
-    values[0].each{ |name, value| 
+    values[0].each{ |name, value|
       if name == key[:first_name]
         temp_item = value
         temp_item[:first_name] = key[:first_name]
