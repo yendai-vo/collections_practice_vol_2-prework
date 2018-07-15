@@ -59,3 +59,16 @@ def count_elements(arr)
   
   result
 end
+
+
+def merge_data(arr)
+  result = []
+  arr.each { |people|
+    people.each {|name, attributes|
+      new_item = attributes
+      new_item[:name] = name
+      result.push(new_item)
+    }
+  }
+  result
+end
