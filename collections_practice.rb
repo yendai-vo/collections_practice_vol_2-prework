@@ -84,3 +84,16 @@ def find_cool(arr)
   }
   result
 end
+
+def organize_schools(schools)
+  result = []
+  schools.each { |schoolName, val| 
+    found = false
+    result.each{|key, value|
+      if key == val[:location] 
+        value.push(schoolName)
+      end
+    }
+  }
+  result
+end
