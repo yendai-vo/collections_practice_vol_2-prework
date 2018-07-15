@@ -61,13 +61,16 @@ def count_elements(arr)
 end
 
 
-def merge_data(arr1, arr2)
+def merge_data(keys, values)
   result = []
-  arr1.each { |key|
-    temp_item = key
-    attributes = arr2[key]
-    temp_item.merge(attributes)
-    result.push(temp_item)
+  keys.each { |key|
+    values[0].each{ |name, value| 
+      if name == key[:first_name]
+        temp_item = value
+        temp_item[:first_name] = key[:first_name]
+        result.push(temp_item)
+      end
+    }
   }
   result
 end
