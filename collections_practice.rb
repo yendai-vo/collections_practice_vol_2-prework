@@ -65,7 +65,7 @@ def merge_data(arr1, arr2)
   result = []
   arr1.each { |key|
     temp_item = key
-    attributes = arr2[0][key]
+    attributes = arr2[key]
     temp_item.merge(attributes)
     result.push(temp_item)
   }
