@@ -89,7 +89,7 @@ def organize_schools(schools)
   result = {}
   schools.each{ |name, school|
     if !result.has_key?(school[:location])
-      result[school[:location]] => []
+      result[school[:location]] = []
     end
     result[school[:location]].push(name)
   }
