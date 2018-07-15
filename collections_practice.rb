@@ -63,7 +63,7 @@ end
 
 def merge_data(arr1, arr2)
   result = []
-  arr.each { |people|
+  arr2.each { |people|
     people.each {|name, attributes|
       new_item = attributes
       new_item[:name] = name
