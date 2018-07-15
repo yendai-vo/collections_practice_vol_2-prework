@@ -56,7 +56,7 @@ def count_elements(arr)
       result.push(temp_item)
     end
   }
-  
+
   result
 end
 
