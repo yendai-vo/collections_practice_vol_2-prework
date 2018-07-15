@@ -74,3 +74,12 @@ def merge_data(keys, values)
   }
   result
 end
+
+def find_cool(arr)
+  result = []
+  arr.each { |person|
+    if person[:temperature] == "cool"
+      result.push(person)
+    end
+  }
+end
