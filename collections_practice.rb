@@ -82,4 +82,5 @@ def find_cool(arr)
       result.push(person)
     end
   }
+  result
 end
